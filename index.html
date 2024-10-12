@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Tester</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Typing Speed Tester</h1>
+      <div id="text-display" class="text-display">
+        Start typing the text below:
+      </div>
+      <p id="random-text" class="random-text"></p>
+      <textarea
+        id="input-text"
+        class="input-text"
+        placeholder="Start typing here..."
+        disabled
+      ></textarea>
+      <div class="result">
+        <button id="start-btn" class="btn">Start Test</button>
+        <div class="resView">
+          <p>Time: <span id="timer">60</span> sec</p>
+          <p>Words Per Minute: <span id="wpm">0</span></p>
+          <p>Accuracy: <span id="accuracy">0</span>%</p>
+          <p>Errors: <span id="errors">0</span></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
